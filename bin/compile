@@ -60,6 +60,6 @@ rm $FFMPEG_ARCHIVE_NAME
 
 PROFILE_PATH="$BUILD_DIR/.profile.d/ffmpeg.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-echo 'export PATH="$PATH:${HOME}/vendor/ffmpeg"' >> $PROFILE_PATH
+echo 'export PATH="$PATH:${HOME}/vendor/ffmpeg:${HOME}/vendor/ffmpeg/bin:"' >> $PROFILE_PATH
 
 echo "Installation successful" | output
